@@ -1,0 +1,39 @@
+[user]
+	name = Uros Milovanovic
+	email = urkem98@gmail.com
+[core]
+	excludesfile = ~/.gitignore
+[init]
+	defaultBranch = main
+[branch]
+	autosetuprebase = local
+[fetch]
+	prune = true
+[push]
+	default = simple
+[pull]
+	twohead = ort
+[diff]
+	colorMoved = default
+[rerere]
+	enabled = 1
+	autoupdate = 1
+[pager]
+	diff = delta
+	log = delta
+	reflog = delta
+	show = delta
+[delta]
+	features = line-numbers decorations
+ 	line-numbers = true
+ 	navigate = true
+	syntax-theme = base16-256 # bat theme
+[interactive]
+	diffFilter = delta --color-only
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+[submodule]
+	recurse = true
