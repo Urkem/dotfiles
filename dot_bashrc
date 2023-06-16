@@ -133,3 +133,4 @@ source "$OSH"/oh-my-bash.sh
 # alias ohmybash="mate ~/.oh-my-bash"
 
 export PATH=$PATH:/home/urosm/go/bin
+. /opt/asdf-vm/asdf.sh

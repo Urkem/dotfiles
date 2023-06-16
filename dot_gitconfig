@@ -1,6 +1,7 @@
 [user]
 	name = Uros Milovanovic
 	email = urkem98@gmail.com
+	signingkey = ~/.ssh/github.pub
 [core]
 	excludesfile = ~/.gitignore
 [init]
@@ -37,3 +38,5 @@
 	clean = git-lfs clean -- %f
 [submodule]
 	recurse = true
+[gpg]
+	format = ssh
